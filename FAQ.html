@@ -1,0 +1,125 @@
+{% extends "base_website.html" %}
+{% block content %}
+<main>
+    <section>
+        <div class="Page">
+            <div class="Container">
+                <div class="u-center-text u-m-t-big">
+                    <img class="Icon--header" src="static/IndexAssets/img/icon/faq.png" alt="icon" data-aos="reveal-up" data-aos-duration="500">
+                </div>
+                <h1 class="Header u-center-text" data-aos="reveal-up" data-aos-duration="500" data-aos-delay="100">Frequently Asked Questions</h1>
+                <div class="Accordion" data-aos="reveal-right" data-aos-duration="500" data-aos-delay="300">
+                    <div class="Accordion__item Accordion__shadow">
+                        <div class="Accordion__header">
+                            <div class="Accordion__question">
+                                <div class="Accordion__q">Q.</div>
+                                <p>How long does it take to get my training data?</p>
+                            </div>
+                            <p class="Accordion__button">&plus;</p>
+                        </div>
+                        <div class="Accordion__content">
+                            <p class="text">
+                                For simpler labels such as bounding box,
+                                we typically process over a million labels per day.
+                                For more complex labels like segmentation masks, we can process over a
+                                hundred thousand labels per day. <br>
+                                Contact us, and we can provide you with a guaranteed end date.</p>
+                        </div>
+                    </div>
+                    <div class="Accordion__item Accordion__shadow">
+                        <a class="Accordion__header">
+                            <div class="Accordion__question">
+                                <div class="Accordion__q">Q.</div>
+                                <p>How can I see the progress of my project?</p>
+                            </div>
+                            <p class="Accordion__button">&plus;</p>
+                        </a>
+                        <div class="Accordion__content">
+                            <p class="Text Text--grey-dark Text--small">
+                                Once we start on your project,
+                                we create an account for you with which you can access the Dashboard.
+                                There you can monitor our progress and give feedback in real time.
+                                We are planning to open up the Dashboard to everyone soon. Stayed tuned!</p>
+                        </div>
+                    </div>
+                    <div class="Accordion__item Accordion__shadow">
+                        <a class="Accordion__header">
+                            <div class="Accordion__question">
+                                <div class="Accordion__q">Q.</div>
+                                <p>I have my own raw data that needs to be labeled. How do I upload them?</p>
+                            </div>
+                            <p class="Accordion__button">&plus;</p>
+                        </a>
+                        <div class="Accordion__content">
+                            <p class="Text Text--grey-dark Text--small">
+                                Once we issue an account for you, you can upload the raw data on our Dashboard.
+                                For larger projects, we can arrange an interface that is most convenient for you (i.e. command-line API, etc.).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Accordion__item Accordion__shadow">
+                        <a class="Accordion__header">
+                            <div class="Accordion__question">
+                                <div class="Accordion__q">Q.</div>
+                                <p>How do I receive or download the completed work?</p>
+                            </div>
+                            <p class="Accordion__button">&plus;</p>
+                        </a>
+                        <div class="Accordion__content">
+                            <p class="Text Text--grey-dark Text--small">
+                                Similar to the upload feature, the completed work can be downloaded
+                                through our Dashboard. For larger projects, we can arrange an interface
+                                that is most convenient for you (i.e. command-line API, etc.).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Accordion__item Accordion__shadow">
+                        <a class="Accordion__header">
+                            <div class="Accordion__question">
+                                <div class="Accordion__q">Q.</div>
+                                <p>In what data format is the final training data delivered?</p>
+                            </div>
+                            <p class="Accordion__button">&plus;</p>
+                        </a>
+                        <div class="Accordion__content">
+                            <p class="Text Text--grey-dark Text--small">
+                                When discussing the data specifications with us, we will ask you
+                                what data format works best for you.
+                                You can choose from one of the standard JSON formats (COCO, Pascal, etc.),
+                                use your custom JSON format, or readily usable TF Records, and so on.</p>
+                        </div>
+                    </div>
+                    <div class="Accordion__item Accordion__shadow">
+                        <a class="Accordion__header">
+                            <div class="Accordion__question">
+                                <div class="Accordion__q">Q.</div>
+                                <p>How does the data collection service work?</p>
+                            </div>
+                            <p class="Accordion__button">&plus;</p>
+                        </a>
+                        <div class="Accordion__content">
+                            <p class="Text Text--grey-dark Text--small">
+                                We have a very large collection of copyright-free data we have collected through
+                                partners, professional collectors and crawling.
+                                In addition, we operate a pool of crowdsourced users that can gather the
+                                data you specify. Our curated list is getting larger every minute!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="Page Page--orange Page--noMinHeight Page--noPadding u-center" id="contact sales">
+            <img class="Contact__line Contact__lineLeft" src="static/IndexAssets/img/line/line.png" alt="">
+            <img class="Contact__line Contact__lineRight" src="static/IndexAssets/img/line/line.png" alt="">
+            <div class="u-center-text u-z-100 u-p-t-medium u-p-b-medium">
+                <h1 class="TextEmphasize Text--red u-m-t-medium">Any questions?</h1>
+                <a class="Button Button--red u-m-t-medium" href="{{ url_for('contact') }}">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

@@ -1,58 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Riskpin</title>
-        <meta content="Admin Dashboard" name="description" />
-        <meta content="Themesbrand" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image:width" content="279">
+    <meta property="og:image:height" content="279">
+    <meta property="og:title" content="Superb AI Inc.">
+    <meta property="og:description"
+        content="AI-Powered Training Data
+    Superb AI uses AI to customize your training data, all the way from raw data collection to labeling up to 10x faster than manual labor. Stop wasting your time. Save weeks of your work.">
+    <meta property="og:image" content="assets/asset.superb-ai.com/assets/img/logo/og-image.jpg">
+    
+    <link rel="manifest" href="https://asset.superb-ai.com/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://asset.superb-ai.com/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/Logo_569211018.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://asset.superb-ai.com/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification" content="4KFKp23Z3pDhI3w6P5_qq2jjvnbdtvU_10U85pVSl3U" />
+    <link rel="stylesheet" href="assets/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Questrial|Courgette|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="assets/css/sweetalert2.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Risk-Pin Index</title>
+</head>
+<script src="http://instant.page/1.1.0" type="module"
+    integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
 
-        <!-- App Icons -->
-        <link rel="shortcut icon" href="assets/images/RP.png">
+<body>
+    <!--Navigation bar-->
+    <div class="Navigation__container" id="js-navigationTop">
+        <div class="Container">
+            <div class="Navigation">
+                <a class="Navigation__logo" href="https://risk-pin.herokuapp.com/">
+                    <img src="assets/images/imageedit_18_4054236978.png" alt="logo">
+                </a>
+                <div class="Navigation__menu__wrap">
+                    <div class="Navigation__menu NavigationDropdown__wrap">
+                        <a>PRODUCTS</a>
+                        <div class="NavigationDropdown">
+                            <div class="NavigationDropdown__content">
+                                <a class="NavigationDropdown__menu Icon__wrap" href='#' id="imageData_Nav">
+                                    <img class="Icon--small" src="assets/img/icon/image_video_labeling2.png" alt="icon" />
+                                    <p class="Icon__text">RP Board</p>
+                                </a>
+                                <a class="NavigationDropdown__menu Icon__wrap" href='#'>
+                                    <img class="Icon--small" src="assets/img/icon/text_labeling2.png" alt="icon" />
+                                    <p class="Icon__text">RP Business</p>
+                                </a>
+                                <a class="NavigationDropdown__menu Icon__wrap" href='#'>
+                                    <img class="Icon--small" src="assets/img/icon/data_collection2.png" alt="icon" />
+                                    <p class="Icon__text">RP Coverage</p>
+                                </a>
+                                <a class="NavigationDropdown__menu Icon__wrap" href='#'>
+                                    <img class="Icon--small" src="assets/img/icon/ready_to_get_started.png" alt="icon" />
+                                    <p class="Icon__text">RP signals</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="Navigation__menu" href="#">PRICING</a>
+                    <a href="#" class="Navigation__menu">FAQ</a>
+                    <a href="#" class="Navigation__menu">COMPANY</a>
+                    <a href="#" class="Navigation__menu">CONTACT</a>
+                    <div class="Navigation__button">
+                        <a href="#" class="Button--redOutline">Request Demo</a>
+                        <a href="https://risk-pin.herokuapp.com/" class="Button--redOutline">DASHBOARD <i class="fa fa-arrow-right" style="font-size:15px"></i></a>
+                    </div>
+                </div>
+                <a id="responsiveNavIcon">
+                    <span class="Navigation__icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
 
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-        <style>
-        @media only screen and (max-width: 768px) {
-		  /* For mobile phones: */
-		  [class*="col-"] {
-			width: 100%;
-		  }
-		}
-        </style>
+<main>
+    <!--cover page-->
+    <section>
+        <div class="Page Page--noPadding" id="index-cover">
+            <div class="Cover__circle"></div>
+            <div class="Container">
+                <div class="Cover__text">
+                    <h1 class="Header Header--cover" data-aos="reveal-up" data-aos-duration="700" style="font-size: 25px;">GDPR Compliance for Start-Ups
+                    </h1>
+                    <p class="Header--cover__description" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="100">
+                        Self assess, Identify and mitigate GDPR risks
+                        <br />Super fast and easy, end to end regulation coverage.
+                        <br />Self Service GDPR Tools & Templates.
+                    </p>
+                    <div class="u-m-t-medium">
+                        <a class="Button Button--white Cover__button u-button-m-r" href="#" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="300">REQUEST QUOTE</a>
+                        <a class="Button Button--red Cover__button" href="#" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="400">CONTACT SALES</a>
+                    </div>
+                    <!--
+                    <div class="Cover__emailBoxWrap" data-aos="reveal-left" data-aos-duration="700" data-aos-delay="600">
+                        <h2 class="Cover__emailBoxText">Get early access to our upcoming training dataset! 🎉</h2><br>
+                        <div class="Cover__emailBox" data-aos="reveal-left" data-aos-duration="700" data-aos-delay="800">
+                            <i class="fas fa-arrow-right"></i>
+                            <input class="FormField--underline" id="email_field" type="text" placeholder="Enter your e-mail" required>
+                            <button class="RequestAccessButton" id="submit_button" type="submit" onclick="signup_form()">Request Access</button>
+                        </div>
+                    </div>
+-->
+                </div>
+                <img class="Cover__image" src="assets/img/home/homepage_main_image_backgroundNew.png" alt="cover image" height="800px;" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="600">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="Page Page--pinkGradient Page--minHeight Page--noBottomPadding">
+            <div class="Container">
+                <div class="u-center-text">
+                    <img class="Icon--header" src="assets/img/icon/our_products.png" alt="icon" data-aos="reveal-up">
+                    <h1 class="Header" data-aos="reveal-up" data-aos-delay="100">Our Products</h1>
+                    <p class="HeaderDescription" data-aos="reveal-up" data-aos-delay="200">Designed and developed by expert Lawyers & Auditors.</p>
+                </div>
+            </div>
+            <div class="Grid Grid--respond-tab-port">
+                <div class="Grid--1 Grid--1--gutter--small ProductContent__container ProductContent__container--top">
+                    <img class="ProductContent__image ProductContent__image--left"
+                        src="assets/img/home/data_collection-removebg-preview1-removebg-preview.png"
+                        alt="data-collection"
+                        data-aos="reveal-right" data-aos-delay="300">
+                    <div class="ProductContent__text ProductContent__text--left">
+                        <h2 class="Header Header--sub">RP Board</h2>
+                        <p class="Text u-m-t-mini">
+                            Conduct a Board level Gap Assessment, Mitigation and  Corrective Action.
+                        </p>
+                        <div class="u-center-vertical u-m-t-small">
+                            <a class="ArrowButton" role="button" href="#" data-aos="reveal-up">
+                                LEARN MORE <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Grid--1 Grid--1--gutter--small ProductContent__container ProductContent__container--bottom">
+                    <div class="ProductContent__text ProductContent__text--right">
+                        <h2 class="Header Header--sub">RP Business</h2>
+                        <p class="Text u-m-t-mini">
+                            Conduct a Detailed Business Level Gap Assessment, Mitigation and  Corrective Action.
+                        </p>
+                        <div data-aos="reveal-up">
+                            <div class="u-center-vertical u-m-t-small">
+                                <a class="ArrowButton" role="button" href="#">
+                                    LEARN MORE <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ProductContent__image ProductContent__image--right"
+                        src="assets/img/home/data_lasdbeling-removebg-preview.png"
+                        alt="data-annotation"
+                        data-aos="reveal-left" data-aos-delay="300">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </head>
+    <section>
+        <div class="Page Page--pinkGradient Page--minHeight Page--noBottomPadding" >
+            <div class="Grid Grid--respond-tab-port">
+                <div class="Grid--1 Grid--1--gutter--small ProductContent__container ProductContent__container--top">
+                    <img class="ProductContent__image ProductContent__image--left"
+                        src="assets/img/home/data_collection-removebg-previewsdsad1-removebg-preview-removebg-preview.png"
+                        alt="data-collection"
+                        data-aos="reveal-right" data-aos-delay="300">
+                    <div class="ProductContent__text ProductContent__text--left">
+                        <h2 class="Header Header--sub">RP Coverage</h2>
+                        <p class="Text u-m-t-mini">
+                            A dashboard to view your risk coverage across the GDPR clauses and business requirements.
+                        </p>
+                        <div class="u-center-vertical u-m-t-small">
+                            <a class="ArrowButton" role="button" href="#" data-aos="reveal-up">
+                                LEARN MORE <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Grid--1 Grid--1--gutter--small ProductContent__container ProductContent__container--bottom">
+                    <div class="ProductContent__text ProductContent__text--right">
+                        <h2 class="Header Header--sub">RP Signals</h2>
+                        <p class="Text u-m-t-mini">
+                            AI driven bespoke feature that transmit corrective actions signals  to business owners.
+                        </p>
+                        <div data-aos="reveal-up">
+                            <div class="u-center-vertical u-m-t-small">
+                                <a class="ArrowButton" role="button" href="#">
+                                    LEARN MORE <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ProductContent__image ProductContent__image--right"
+                        src="assets/img/home/data_lasdbeling-removebg-previedsfsdfdsw-removebg-preview.png"
+                        alt="data-annotation"
+                        data-aos="reveal-left" data-aos-delay="300">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="Page" id="index-why">
+            <div class="Container">
+                <img class="Icon--header" src="assets/img/icon/what_makes_us_different.png"
+                    alt="icon" data-aos="reveal-up">
+                <div class="Grid Grid--respond-width-800 Grid--respond-width-800--column u-m-t-mini">
+                    <div class="Grid--1 Grid--1--gutter u-space-between-vertical">
+                        <div>
+                            <h1 class="Header Header--light" data-aos="reveal-up" data-aos-delay="100">What makes us different?</h1>
+                            <p class="HeaderDescription HeaderDescription--black u-p-t-small" data-aos="reveal-up" data-aos-delay="200">
+                                Simple and easy to use,
+                                <br />RP Signals closes the loop for GDPR Compliance requirement,
+                                <br />One stop shop to manage privacy.
+                            </p>
+                        </div>
+                        <!--
+                        <div>
+                            <p class="TextEmphasize Text--grey-dark u-m-t-small" data-aos="reveal-up" data-aos-duration="600" data-aos-delay="300">Up to 10x faster and<br />3x fewer errors</p>
+                            <p class="Text TextEmphasize--sub Text--grey-dark u-m-t-mini" data-aos="reveal-up" data-aos-duration="600" data-aos-delay="300">than manual labor
+                                without
+                                AI</p>
+                        </div>
+                        -->
+                    </div>
+                    <div class="Grid--2">
+                        <video class="Image Difference__video"
+                            poster="../asset.superb-ai.com/assets/img/home/ai.png"
+                            autoplay loop muted playsinline>
+                            <source
+                                src="https://asset.superb-ai.com/assets/img/home/ai.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <body>
+        <!--
+        <div class="Page Page--paddingSmall Page--noTopPadding">
+            <div class="Container">
+                <div
+                    class="Grid Grid--respond-width-800 Grid--respond-width-800--column">
+                    <div class="Grid--1 Grid--1--gutterSmall u-center" data-aos="reveal-right" data-aos-duration="600" data-aos-delay="100">
+                        <div class="Difference Card Card--noPadding">
+                            <img class="Difference__image"
+                                src="assets/img/home/superior_quality.png"
+                                alt="superior quality">
+                            <div class="Difference__textBox">
+                                <p class="Header Header--sub Header--orange-dark u-m-t-small">Superior quality assurance</p>
+                                <p class="Text u-m-t-mini Text--small">
+                                    Our labels are inspected by both AI and in-house professionals to guarantee
+                                    bullet-proof quality, superior to crowdsourced manual labor.
+                                </p>
 
-        <!-- Loader -->
-        <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Grid--1 Grid--1--gutterSmall u-center" data-aos="reveal-right" data-aos-duration="600" data-aos-delay="200">
+                        <div class="Difference Card Card--noPadding">
+                            <img class="Difference__image"
+                                src="assets/img/home/gets_better_nobox.png" alt="gets better">
+                            <div class="Difference__textBox">
+                                <p class="Header Header--sub Header--orange-dark u-m-t-small">Gets better as you go</p>
+                                <p class="Text u-m-t-mini Text--small">
+                                    Compared to static, one-size-fits-all manual labeling services, our AI adapts to
+                                    your specific labeling task and provides faster and cheaper training data over time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Grid--1 Grid--1--gutterSmall u-center" data-aos="reveal-right" data-aos-duration="600" data-aos-delay="300">
+                        <div class="Difference Card Card--noPadding">
+                            <img class="Difference__image"
+                                src="assets/img/home/guaranteed_data.png"
+                                alt="guaranteed data">
+                            <div class="Difference__textBox">
+                                <p class="Header Header--sub Header--orange-dark u-m-t-small">Guaranteed data security</p>
+                                <p class="Text u-m-t-mini Text--small">
+                                    Crowdsourcing can lead to compromised data security and privacy. We make sure your
+                                    data never gets out to the public and only authorized personnel access your data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+    </div>
+</section>
+    <!--
+    <section>
+        <div class="Page Page--purple" id="how-the-process-works">
+            <div class="Container">
+                <div class="u-center-text">
+                    <img class="Icon--header" src="assets/img/icon/how_the_process_works.png" alt="icon" data-aos="reveal-up">
+                    <h1 class="Header Header--purple" data-aos="reveal-up" data-aos-delay="100">How the process works</h1>
+                </div>
+                <div class="Grid Grid--respond-width-800 Grid--respond-width-800--column Grid--respond-width-800--noMargin u-m-t-big">
+                    <div class="Grid--1 Process--left Grid">
+                        <div class="js-decide-spec Process Process__text Grid--1 Process--active" data-aos="reveal-right" data-aos-duration="800">
+                            <p class="TextEmphasize TextEmphasize--sub">
+                                1. Decide your task specs
+                            </p>
+                            <p class="Text--small u-m-t-mini">
+                                Tell us about your training data needs and timeline. We will get you set up with your account.
+                            </p>
+                        </div>
+                        <div class="js-build-data Process Process__text Grid--1" data-aos="reveal-right" data-aos-duration="800">
+                            <p class="TextEmphasize TextEmphasize--sub">
+                                2. Build training data
+                            </p>
+                            <p class="Text--small u-m-t-mini">
+                                Upload your data or request a data collection, and we start labeling right away. Tell us if you prefer an API or integration with your cloud storage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Grid--2">
+                        <div class="Process__image__wrap u-center">
+                            <img class="js-decide-spec Image Process__image Process__image--active" src="assets/img/process/decide_spec.png"
+                                alt="decide spec">
+                            <img class="js-build-data Image Process__image" src="assets/img/process/build_data.png" alt="build data">
+                            <img class="js-monitoring Image Process__image" src="assets/img/process/monitoring.png" alt="monitoring">
+                            <img class="js-feedback Image Process__image" src="assets//img/process/feedback.png" alt="feedback">
+                            <div class="Process__shadow"></div>
+                        </div>
+                        <div class="Process__shadow__wrap">
+                        </div>
+                    </div>
+                    <div class="Grid--1 Process--right Grid">
+                        <div class="js-monitoring Process Process__text Grid--1" data-aos="reveal-right" data-aos-duration="800">
+                            <p class="TextEmphasize TextEmphasize--sub">
+                                3. Real-time monitor
+                            </p>
+                            <p class="Text--small u-m-t-mini">
+                                Monitor our progress in real-time using your account dashboard. We also monitor each AI and human worker’s performance to ensure both speed and quality.
+                            </p>
+                        </div>
+                        <div class="js-feedback Process Process__text Grid--1" data-aos="reveal-right" data-aos-duration="800">
+                            <p class="TextEmphasize TextEmphasize--sub">
+                                4. Feedback
+                            </p>
+                            <p class="Text--small u-m-t-mini">
+                                If your data specs change or you think we have made an error, give us feedback on your dashboard and we will make the changes immediately.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!--
+    <section>
+        <div class="Page Page--orange" id="index-partners">
+            <div class="Container">
+                <div class="u-center-text">
+                    <img class="Icon--header" src="assets/img/icon/trusted_by_industry_leaders.png" alt="icon" data-aos="reveal-up">
+                    <h1 class="Header Header--light" data-aos="reveal-up" data-aos-delay="100">Trusted by</h1>
+                    <div class="Card u-width-60 u-m-t-big" data-aos="reveal-right" data-aos-delay="300">
+                        <h1 class="HeaderDescription">
+                            Our Clients
+                        </h1>
+                        <div class="Grid Grid--center Grid--wrap u-m-t-small">
+                            <div class="Grid Grid--center">
+                                <img class="Image--partners" src="assets/img/clients/client_lg.png" alt="client lg">
+                                <img class="Image--partners" src="assets/img/clients/client_kakao.png"
+                                    alt="client kakao">
+                            </div>
+                            <div class="Grid Grid--center">
+                                <img class="Image--partners" src="assets/img/clients/client_posco.png"
+                                    alt="client posco">
+                                <img class="Image--partners" src="assets/img/clients/client_skt.png"
+                                    alt="client skt">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Card u-width-60 u-m-t-mini" data-aos="reveal-right" data-aos-delay="500">
+                        <h1 class="HeaderDescription">
+                            Our Investors
+                        </h1>
+                        <img class="Image--partners-big u-m-t-small" src="assets/img/investor/investor_yc.png" alt="investor yc">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    --> 
+     <section>
+        <div class="Page Page--orange Page--miniBottomPadding u-center" id="contact sales">
+            <img class="Contact__line Contact__lineLeft" src="assets/img/line/line.png" alt="">
+            <img class="Contact__line Contact__lineRight" src="assets/img/line/line.png" alt="">
+            <div class="u-center-text u-z-100 u-p-t-medium u-p-b-medium">
+                <img class="Icon--header" src="assets/img/icon/ready_to_get_started.png" alt="icon" data-aos="reveal-up">
+                <h1 class="TextEmphasize Text--red u-m-t-mini" data-aos="reveal-up" data-aos-delay="200">Ready to get started?</h1>
+                <a class="Button Button--red u-m-t-medium" href="#" data-aos="reveal-up" data-aos-delay="400">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+</main>
 
-        <!-- Begin page -->
-        <div class="accountbg"></div>
+<!--footer-->
+    <footer class="Container">
+        <div class="footer Page Page--noTopBottomPadding">
+            <div class="footer__menu">
+                <div class="footer__image">
+                    <div>
+                        <img src="assets/images/Logo_569211018.png" height="60px;" />
+                        <p class="description">"Risk-Pin"</p>
+                    </div>
+                    <div>
+                        <p class="footer__copyright ">© Risk-Pin Inc. 2019.</p>
+                        <a class="item__list" href="privacy-policy.html" style="padding-top: .1rem">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="item__list main">Products</p>
+                    <a class="item__list" href="#">Product 1</a>
+                    <a class="item__list" href="#">Product 2</a>
+                    <a class="item__list" href="#">Product 3</a>
+                </div>
+                <div class="item">
+                    <a class="main item__list">Pricing</a>
+                    <a class="item__list" href="#">Data Collection</a>
+                    <a class="item__list" href="#">Data Labeling</a>
+                </div>
+                <div class="item">
+                    <p class="main item__list">Company</p>
+                    <a class="item__list" href="#">About Us</a>
+                    <a class="item__list" href="#">Our Team</a>
+                    <a class="item__list" href="#">Our Advisors</a>
+                </div>
+                <div class="item">
+                    <a class="main item__list">Contact</a>
+                    <a class="item__list" href="#">Contact US</a>
+                    <a class="item__list" href="#">Request Quote</a>
+                    <a class="item__list" href="#">FAQ</a>
+                    <!--<a class="item__list" href="mailto:sales@spb.ai">sales@spb.ai</a>-->
+                    <!--<a class="item__list" href="mailto:contact@spb.ai">contact@spb.ai</a>-->
+                </div>
+                <div class="item item--divided">
+                    <p class="main item__list">Offices</p>
+                    <p class="sub item__list">Global Headquarters</p>
+                    <p class="item__list">
+                        950 Tower Lane
+                        </br>Foster City, CA
+                    </p>
+                    </br>
+                    <p class="sub item__list">Asia-Pacific Office</p>
+                    <p class="item__list">
+                        4-144, K-Twin Tower B
+                        </br>Seoul, Korea
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-		<div class="wrapper-page">
-			 <a class="navbar-brand" href="#"><img src="assets/images/RP.png" class="img-responsive img-rounded" style="max-height: 100%;max-width: 100%; ">
-			 <P><h4 align="center" style="color:#0D0103;">{{ under construction }}</h4></P></a>
-			<!-- <h4 align="center" style="color:#0D0103;">{{ under construction }}</h4> -->
-		</div>
-
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/modernizr.min.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    </body>
+    <script async type="text/javascript" src="assets/js/responsive-ui.js"></script>
+    <script async type="text/javascript" src="assets/js/process-click-event-handler.js"></script>
+    <script async type="text/javascript" src="assets/js/navigation-event-handler.js"></script>
+    <script async type="text/javascript" src="assets/js/pricing_event_handler.js"></script>
+    <script async type="text/javascript">
+        document.getElementById("email_field")
+            .addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("submit_button").click();
+            }
+        });
+    </script>
+    <script async type="text/javascript" src="assets/js/segment.js"></script>
+    <script async type="text/javascript" src="assets/js/utils.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/sweetalert2.min.js"></script>
+    <script async type="text/javascript" src="assets/js/sweetalert.js"></script>
+    <script async type="text/javascript">
+        AOS.init({
+            duration: 500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+    <script async type="text/javascript">
+        AOS.init({
+            duration: 500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+</body>
 </html>

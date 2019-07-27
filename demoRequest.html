@@ -1,0 +1,223 @@
+{% extends "base_website.html" %}
+{% block content %}
+<main>
+    <section>
+        <div class="Page">
+            <div class="Quote__circle"></div>
+            <div class="Container">
+                <div class="u-center-text u-m-t-medium">
+                    <h1 class="Header">Get a quote in 24 hours!</h1>
+                    <p class="HeaderDescription HeaderDescription--marginBig HeaderDescription--black">Request a quote
+                        below, and we will get back to you in a day!
+                    </p>
+                </div>
+                <div class="Contact--quote Card u-m-t-big">
+                    <form method="post" id="gform" action="https://script.google.com/a/spb.ai/macros/s/AKfycbz-tZrOf5BjhE3gcAtqcmZI0_vvOlB9Uh1tyi1Q/exec">
+                        <div class="Form">
+                            <p class="FormField__label">Your Name*</p>
+                            <div class="Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall" type="text" id="first-name" name="first-name"
+                                    placeholder="First Name" required>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall" type="text" id="last-name" name="last-name"
+                                    placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="Form">
+                            <!--<input class="Form is-invalid" type="email" id="email" name="email" placeholder="E-mail">-->
+                            <!--<small class="form-text text-danger">Please enter a correct email address.</small>-->
+                            <p class="FormField__label">Work E-mail*</p>
+                            <input class="FormField" type="email" id="email" name="email" placeholder="email@yourcompany.com"
+                                pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' oninvalid="this.setCustomValidity('Please enter a valid e-mail')"
+                                oninput="this.setCustomValidity('')" required>
+                        </div>
+
+                        <div class="Form">
+                            <p class="FormField__label">Project Details*</p>
+                            <p class="FormField__label FormField__label__detail">Source of raw data</p>
+                            <input class="FormField" type="text" id="data-source" name="data-source" placeholder="&#9662; Select from options"
+                                list="data-source-list" required autocomplete="off">
+                            <datalist id="data-source-list">
+                                <option>I have my own</option>
+                                <option>I need data collection service</option>
+                                <option>Others (please specify)</option>
+                            </datalist>
+                        </div>
+
+                        <div class="Form">
+                            <p class="FormField__label FormField__label__detail">Data type</p>
+                            <div class="Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall" type="text" id="data-type" name="data-type"
+                                    placeholder="&#9662; What type of data?" list="data-type-list" onChange="onDatatypeChange()"
+                                    required autocomplete="off">
+                                <datalist id="data-type-list">
+                                    <option>Image</option>
+                                    <option>Video</option>
+                                    <option>Text</option>
+                                </datalist>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall" type="text" id="data-size" name="data-size"
+                                    placeholder="Enter quantity" required autocomplete="off">
+                            </div>
+                        </div>
+
+                        <p class="FormField__label FormField__label__detail">Label type</p>
+                        <div class="input_fields_wrap">
+                            <div class="Form Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall displayed-label-type" type="text"
+                                    name="label-type-1" placeholder="Select a data type" list="label-type-list"
+                                    required autocomplete="off">
+                                <datalist id="label-type-list">
+                                </datalist>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall displayed-label-size" type="text"
+                                    name="label-size-1" placeholder="Enter quantity" required autocomplete="off"
+                                    autocomplete="off">
+                                <div class="remove-label-div">
+                                    <a href="#" class="remove-label-button">&#215;</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--templates-->
+                        <div id="empty-labels-form-group" style="display:none">
+                            <div class="Form Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-type" type="text"
+                                    placeholder="Select a data type" list="label-type-list" autocomplete="off">
+                                <datalist id="label-type-list">
+                                </datalist>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-size" type="text"
+                                    placeholder="Enter quantity" autocomplete="off">
+                                <div class="remove-label-div">
+                                    <a href="#" class="remove-label-button">&#215;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="image-labels-form-group" style="display:none">
+                            <div class="Form Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-type" type="text"
+                                    placeholder="&#9662; What type of label?" list="label-type-list" autocomplete="off">
+                                <datalist id="label-type-list">
+                                    <option>Class tag</option>
+                                    <option>Bounding Box</option>
+                                    <option>Keypoint, Polyline</option>
+                                    <option>Segmentation</option>
+                                    <option>Lidar Labeling</option>
+                                    <option>Others (please specify)</option>
+                                </datalist>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-size" type="text"
+                                    placeholder="Enter quantity" autocomplete="off">
+                                <div class="remove-label-div">
+                                    <a href="#" class="remove-label-button">&#215;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="video-labels-form-group" style="display:none">
+                            <div class="Form Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-type" type="text"
+                                    placeholder="&#9662; What type of label?" list="label-type-list" autocomplete="off">
+                                <datalist id="label-type-list">
+                                    <option>Class tag</option>
+                                    <option>Bounding Box</option>
+                                    <option>Keypoint, Polyline</option>
+                                    <option>Segmentation</option>
+                                    <option>Lidar Labeling</option>
+                                    <option>Others (please specify)</option>
+                                </datalist>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-size" type="text"
+                                    placeholder="Enter quantity" autocomplete="off">
+                                <div class="remove-label-div">
+                                    <a href="#" class="remove-label-button">&#215;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="text-labels-form-group" style="display:none">
+                            <div class="Form Grid">
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-type" type="text"
+                                    placeholder="&#9662; What type of label?" list="label-type-list" autocomplete="off">
+                                <datalist id="label-type-list">
+                                    <option>Class tag</option>
+                                    <option>A/B Comparison</option>
+                                    <option>Question Answering</option>
+                                    <option>OCR Transcription</option>
+                                    <option>Others (please specify)</option>
+                                </datalist>
+                                <input class="FormField Grid--1 Grid--1--gutterSmall hidden-label-size" type="text"
+                                    placeholder="Enter quantity" autocomplete="off">
+                                <div class="remove-label-div">
+                                    <a href="#" class="remove-label-button">&#215;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--add label field button-->
+                        <div class="button--quote--add--field add-label-button">
+                            + Add label type
+                        </div>
+
+                        <!--request button-->
+                        <div class="u-m-t-big u-center">
+                            <button class="Button Button--red" type="submit">Request Quote</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="Page Page--orange" id="index-partners">
+            <div class="Container">
+                <div class="u-center-text">
+                    <img class="Icon--header" src="static/IndexAssets/img/icon/trusted_by_industry_leaders.png" alt="icon" data-aos="reveal-up">
+                    <h1 class="Header Header--light" data-aos="reveal-up" data-aos-delay="100">Trusted by</h1>
+                    <div class="Card u-width-60 u-m-t-big" data-aos="reveal-right" data-aos-delay="300">
+                        <h1 class="HeaderDescription">
+                            Our Clients
+                        </h1>
+                        <div class="Grid Grid--center Grid--wrap u-m-t-small">
+                            <div class="Grid Grid--center">
+                                <img class="Image--partners" src="static/IndexAssets/img/clients/client_lg.png" alt="client lg">
+                                <img class="Image--partners" src="static/IndexAssets/img/clients/client_kakao.png"
+                                    alt="client kakao">
+                            </div>
+                            <div class="Grid Grid--center">
+                                <img class="Image--partners" src="static/IndexAssets/img/clients/client_posco.png"
+                                    alt="client posco">
+                                <img class="Image--partners" src="static/IndexAssets/img/clients/client_skt.png"
+                                    alt="client skt">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Card u-width-60 u-m-t-mini" data-aos="reveal-right" data-aos-delay="500">
+                        <h1 class="HeaderDescription">
+                            Our Investors
+                        </h1>
+                        <img class="Image--partners-big u-m-t-small" src="static/IndexAssets/img/investor/investor_yc.png" alt="investor yc">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+	<section>
+        <div class="Page Page--orange Page--miniBottomPadding u-center" id="contact sales">
+            <img class="Contact__line Contact__lineLeft" src="static/IndexAssets/img/line/line.png" alt="">
+            <img class="Contact__line Contact__lineRight" src="static/IndexAssets/img/line/line.png" alt="">
+            <div class="u-center-text u-z-100 u-p-t-medium u-p-b-medium">
+                <img class="Icon--header" src="static/IndexAssets/img/icon/ready_to_get_started.png" alt="icon" data-aos="reveal-up">
+                <h1 class="TextEmphasize Text--red u-m-t-mini" data-aos="reveal-up" data-aos-delay="200">Ready to get started?</h1>
+                <a class="Button Button--red u-m-t-medium" href="{{ url_for('contact') }}" data-aos="reveal-up" data-aos-delay="400">CONTACT US</a>
+            </div>
+        </div>
+    </section>    <div class="PopUp u-center-text" id="js-pop-up">
+        <div class="PopUp-layer u-center-object">
+            <h2 class="Header u-m-t-page">THANK YOU</h2>
+            <p class="HeaderDescription HeaderDescription--black" name="al">
+                Your message has been sent!
+            </p>
+            <button class="Button Button--red u-m-tb-page" onclick="close_pop_up()">CLOSE</button>
+        </div>
+    </div>
+</main>
+{% endblock %}
