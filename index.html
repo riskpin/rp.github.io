@@ -32,17 +32,27 @@
     <link rel="stylesheet" href="assets/css1/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Risk-Pin Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<script src="http://instant.page/1.1.0" type="module"
+    <script src="http://instant.page/1.1.0" type="module"
     integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
-
+    <script>
+        window.setInterval(function(){
+            if(screen.width < 800){
+                $(".Cover__circle").css("background", "white");
+            }
+            else if(screen.width > 799){
+                $(".Cover__circle").css("background", "#CE0000");
+            }
+        }, 500);
+    </script>
 <body>
     <!--Navigation bar-->
     <div class="Navigation__container" id="js-navigationTop">
         <div class="Container">
             <div class="Navigation">
                 <a class="Navigation__logo" href="https://risk-pin.herokuapp.com/">
-                    <img src="assets/images/imageedit_18_4054236978.png" alt="logo">
+                    <img src="assets/images/imageedit_20_9823462642.png" alt="logo">
                 </a>
                 <div class="Navigation__menu__wrap">
                     <div class="Navigation__menu NavigationDropdown__wrap">
@@ -121,7 +131,7 @@
         <div class="Page Page--pinkGradient Page--minHeight Page--noBottomPadding">
             <div class="Container">
                 <div class="u-center-text">
-                    <img class="Icon--header" src="assets/img/icon/our_products.png" alt="icon" data-aos="reveal-up">
+                    <img class="Icon--header" src="assets/img/icon/our_products2.png" alt="icon" data-aos="reveal-up">
                     <h1 class="Header" data-aos="reveal-up" data-aos-delay="100">Our Products</h1>
                     <p class="HeaderDescription" data-aos="reveal-up" data-aos-delay="200">Designed and developed by expert Lawyers & Auditors.</p>
                 </div>
@@ -164,6 +174,7 @@
                         data-aos="reveal-left" data-aos-delay="300">
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -213,7 +224,7 @@
     <section>
         <div class="Page" id="index-why">
             <div class="Container">
-                <img class="Icon--header" src="assets/img/icon/what_makes_us_different.png"
+                <img class="Icon--header" src="assets/img/icon/what_makes_us_different2.png"
                     alt="icon" data-aos="reveal-up">
                 <div class="Grid Grid--respond-width-800 Grid--respond-width-800--column u-m-t-mini">
                     <div class="Grid--1 Grid--1--gutter u-space-between-vertical">
@@ -221,128 +232,36 @@
                             <h1 class="Header Header--light" data-aos="reveal-up" data-aos-delay="100">What makes us different?</h1>
                             <p class="HeaderDescription HeaderDescription--black u-p-t-small" data-aos="reveal-up" data-aos-delay="200">
                                 Simple and easy to use,
-                                <br />RP Signals closes the loop for GDPR Compliance requirement,
+                                RP Signals closes the loop for GDPR Compliance requirement,
                                 <br />One stop shop to manage privacy.
                             </p>
                         </div>
                     </div>
                     <div class="Grid--2">
+                        <br/>
+                        <br/>
+                        <h1 class="Header--light" style="margin-left: 30%;" data-aos="reveal-up" data-aos-delay="100">...VIDEO COMING SOON...</h1>
+                        <!--
                         <video class="Image Difference__video"
                             poster="../asset.superb-ai.com/assets/img/home/ai.png"
                             autoplay loop muted playsinline>
                             <source
                                 src="https://asset.superb-ai.com/assets/img/home/ai.mp4">
                         </video>
+                        -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--
-    <section>
-        <div class="Page Page--purple" id="how-the-process-works">
-            <div class="Container">
-                <div class="u-center-text">
-                    <img class="Icon--header" src="assets/img/icon/how_the_process_works.png" alt="icon" data-aos="reveal-up">
-                    <h1 class="Header Header--purple" data-aos="reveal-up" data-aos-delay="100">How the process works</h1>
-                </div>
-                <div class="Grid Grid--respond-width-800 Grid--respond-width-800--column Grid--respond-width-800--noMargin u-m-t-big">
-                    <div class="Grid--1 Process--left Grid">
-                        <div class="js-decide-spec Process Process__text Grid--1 Process--active" data-aos="reveal-right" data-aos-duration="800">
-                            <p class="TextEmphasize TextEmphasize--sub">
-                                1. Decide your task specs
-                            </p>
-                            <p class="Text--small u-m-t-mini">
-                                Tell us about your training data needs and timeline. We will get you set up with your account.
-                            </p>
-                        </div>
-                        <div class="js-build-data Process Process__text Grid--1" data-aos="reveal-right" data-aos-duration="800">
-                            <p class="TextEmphasize TextEmphasize--sub">
-                                2. Build training data
-                            </p>
-                            <p class="Text--small u-m-t-mini">
-                                Upload your data or request a data collection, and we start labeling right away. Tell us if you prefer an API or integration with your cloud storage.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="Grid--2">
-                        <div class="Process__image__wrap u-center">
-                            <img class="js-decide-spec Image Process__image Process__image--active" src="assets/img/process/decide_spec.png"
-                                alt="decide spec">
-                            <img class="js-build-data Image Process__image" src="assets/img/process/build_data.png" alt="build data">
-                            <img class="js-monitoring Image Process__image" src="assets/img/process/monitoring.png" alt="monitoring">
-                            <img class="js-feedback Image Process__image" src="assets//img/process/feedback.png" alt="feedback">
-                            <div class="Process__shadow"></div>
-                        </div>
-                        <div class="Process__shadow__wrap">
-                        </div>
-                    </div>
-                    <div class="Grid--1 Process--right Grid">
-                        <div class="js-monitoring Process Process__text Grid--1" data-aos="reveal-right" data-aos-duration="800">
-                            <p class="TextEmphasize TextEmphasize--sub">
-                                3. Real-time monitor
-                            </p>
-                            <p class="Text--small u-m-t-mini">
-                                Monitor our progress in real-time using your account dashboard. We also monitor each AI and human worker’s performance to ensure both speed and quality.
-                            </p>
-                        </div>
-                        <div class="js-feedback Process Process__text Grid--1" data-aos="reveal-right" data-aos-duration="800">
-                            <p class="TextEmphasize TextEmphasize--sub">
-                                4. Feedback
-                            </p>
-                            <p class="Text--small u-m-t-mini">
-                                If your data specs change or you think we have made an error, give us feedback on your dashboard and we will make the changes immediately.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!--
-    <section>
-        <div class="Page Page--orange" id="index-partners">
-            <div class="Container">
-                <div class="u-center-text">
-                    <img class="Icon--header" src="assets/img/icon/trusted_by_industry_leaders.png" alt="icon" data-aos="reveal-up">
-                    <h1 class="Header Header--light" data-aos="reveal-up" data-aos-delay="100">Trusted by</h1>
-                    <div class="Card u-width-60 u-m-t-big" data-aos="reveal-right" data-aos-delay="300">
-                        <h1 class="HeaderDescription">
-                            Our Clients
-                        </h1>
-                        <div class="Grid Grid--center Grid--wrap u-m-t-small">
-                            <div class="Grid Grid--center">
-                                <img class="Image--partners" src="assets/img/clients/client_lg.png" alt="client lg">
-                                <img class="Image--partners" src="assets/img/clients/client_kakao.png"
-                                    alt="client kakao">
-                            </div>
-                            <div class="Grid Grid--center">
-                                <img class="Image--partners" src="assets/img/clients/client_posco.png"
-                                    alt="client posco">
-                                <img class="Image--partners" src="assets/img/clients/client_skt.png"
-                                    alt="client skt">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Card u-width-60 u-m-t-mini" data-aos="reveal-right" data-aos-delay="500">
-                        <h1 class="HeaderDescription">
-                            Our Investors
-                        </h1>
-                        <img class="Image--partners-big u-m-t-small" src="assets/img/investor/investor_yc.png" alt="investor yc">
+
     
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
-    --> 
      <section>
         <div class="Page Page--orange Page--miniBottomPadding u-center" id="contact sales">
             <img class="Contact__line Contact__lineLeft" src="assets/img/line/line.png" alt="">
             <img class="Contact__line Contact__lineRight" src="assets/img/line/line.png" alt="">
             <div class="u-center-text u-z-100 u-p-t-medium u-p-b-medium">
-                <img class="Icon--header" src="assets/img/icon/ready_to_get_started.png" alt="icon" data-aos="reveal-up">
+                <img class="Icon--header" src="assets/img/icon/ready_to_get_started2.png" alt="icon" data-aos="reveal-up">
                 <h1 class="TextEmphasize Text--red u-m-t-mini" data-aos="reveal-up" data-aos-delay="200">Ready to get started?</h1>
                 <a class="Button Button--red u-m-t-medium" href="#" data-aos="reveal-up" data-aos-delay="400">CONTACT US</a>
             </div>
@@ -355,14 +274,15 @@
         <div class="footer Page Page--noTopBottomPadding">
             <div class="footer__menu">
                 <div class="footer__image">
-                    <div>
-                        <img src="assets/images/Logo_569211018.png" height="60px;" />
-                        <p class="description">"Risk-Pin"</p>
-                    </div>
-                    <div>
-                        <p class="footer__copyright ">© Risk-Pin Inc. 2019.</p>
-                        <a class="item__list" href="privacy-policy.html" style="padding-top: .1rem">Privacy Policy</a>
-                    </div>
+                    <center>
+                        <div>
+                            <img src="assets/images/Logo_569211018.png" height="75px;" /> 
+                        </div>
+                        <div>
+                            <p class="footer__copyright ">© Risk-Pin Inc. 2019.</p>
+                            <a class="item__list" href="#" style="padding-top: .1rem">Privacy Policy</a>
+                        </div>
+                    </center>
                 </div>
                 <div class="item">
                     <p class="item__list main">Products</p>
@@ -390,18 +310,9 @@
                     <!--<a class="item__list" href="mailto:contact@spb.ai">contact@spb.ai</a>-->
                 </div>
                 <div class="item item--divided">
-                    <p class="main item__list">Offices</p>
-                    <p class="sub item__list">Global Headquarters</p>
-                    <p class="item__list">
-                        950 Tower Lane
-                        </br>Foster City, CA
-                    </p>
+                    <p class="main item__list">Office:</p>
+                    <p class="item__list">UK, London.</p>
                     </br>
-                    <p class="sub item__list">Asia-Pacific Office</p>
-                    <p class="item__list">
-                        4-144, K-Twin Tower B
-                        </br>Seoul, Korea
-                    </p>
                 </div>
             </div>
         </div>
