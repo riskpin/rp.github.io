@@ -399,7 +399,7 @@ body {
       border: 2px solid #5a7bff;
       color: #5a7bff; }
   .Button--red {
-    background-color: #ff625a;
+    background-color: #CE0000;
     color: #fff; }
     .Button--red:hover {
       color: #fff;
@@ -411,7 +411,7 @@ body {
       transform: translateY(0); }
   .Button--white {
     background-color: #fff;
-    color: #ff625a; }
+    color: #CE0000; }
     .Button--white:hover {
       background-color: #fdfdfd;
       color: #e93d34;
@@ -441,17 +441,17 @@ body {
   .Button--redOutline {
     background-color: #fff;
     box-sizing: border-box;
-    border: 1px solid #ff625a;
+    border: 1px solid #D98880;;
     border-radius: 0.3rem;
     text-decoration: none;
-    color: #ff625a;
+    color: #CE0000;
     padding: .6rem 2.5rem;
     transition: all .3s ease-in-out; }
     .Button--redOutline:hover {
-      color: #fff;
-      background-color: #ff625a; }
+      color: rgb(3, 3, 3);
+      background-color: rgba(253, 139, 131, 0.952) }
     .Button--redOutlinea {
-      color: #ff625a; }
+      color: #080808; }
   .Button--noShadow {
     box-shadow: none; }
   .Button--big {
@@ -481,7 +481,7 @@ body {
   font-family: 'SofiaProMedium';
   font-weight: normal;
   font-size: 1.4rem;
-  color: #ff9772;
+  color: #f57575;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -550,7 +550,7 @@ body {
   .Page--minusTopMargin {
     margin-top: -16rem; }
   .Page--pinkGradient {
-    background-image: linear-gradient(128deg, #fefaf7, #fff1ee 64%, #ffe7e4); }
+    background-image: linear-gradient(128deg, rgb(255, 255, 255), rgb(255, 255, 255) 64%, rgba(255, 255, 255, 0.856)); }
   .Page--pink-1 {
     background-color: #fff0f0; }
   .Page--pink-2 {
@@ -564,7 +564,7 @@ body {
   .Page--violet {
     background-color: rgba(94, 0, 255, 0.12); }
   .Page--orange {
-    background-color: rgba(254, 123, 19, 0.04); }
+    background-color: rgba(255, 255, 255, 0.644); }
   .Page--mint {
     background-color: #e2fff1; }
   .Page--minHeight {
@@ -623,13 +623,13 @@ body {
   font-size: 3.2rem;
   font-family: 'SofiaProMedium';
   font-weight: 300;
-  color: #ff625a; }
+  color: #CE0000; }
   @media only screen and (max-width: 37.5em) {
     .Header {
       font-size: 2.5rem; } }
   .HeaderDescription {
     font-size: 1.7rem;
-    color: #ab1313;
+    color: #CE0000;
     margin-top: 0.2rem; }
     @media only screen and (max-width: 37.5em) {
       .HeaderDescription {
@@ -657,14 +657,14 @@ body {
         font-size: 2.7rem; } }
   .Header--sub {
     font-size: 2rem;
-    color: #ff625a; }
+    color: rgb(248, 78, 78); }
   .Header--handwritten {
     font-family: 'Courgette', cursive;
     font-size: 2.8rem; }
   .Header--white {
     color: #fff; }
   .Header--light {
-    color: #ff9772; }
+    color: #CE0000; }
   .Header--purple {
     color: #5e00ff; }
   .Header--violet {
@@ -735,7 +735,7 @@ body {
   .Text--noDecoration {
     text-decoration: none; }
   .Text--red {
-    color: #ff625a; }
+    color: #CE0001; }
   .Text--black {
     color: #000; }
   .Text--brown {
@@ -1765,7 +1765,7 @@ body {
   .Navigation__menu {
     padding: 2.75rem 1.9rem;
     text-decoration: none;
-    color: inherit;
+    color: #445372;
     position: relative; }
     @media only screen and (max-width: 62.5em) {
       .Navigation__menu {
@@ -1774,7 +1774,7 @@ body {
       .Navigation__menu {
         width: 100%; } }
     .Navigation__menu:hover {
-      color: #963524; }
+      color: #CE0000; }
     .Navigation__menu p {
       cursor: pointer; }
     .Navigation__menu__wrap {
@@ -2136,7 +2136,7 @@ body {
 
 .Cover__circle {
   position: absolute;
-  background: rgba(255, 98, 90, 0.82);
+  background: #CE0000;
   width: 190rem;
   height: 190rem;
   top: -170rem;

@@ -399,11 +399,11 @@ body {
       border: 2px solid #5a7bff;
       color: #5a7bff; }
   .Button--red {
-    background-color: #CE0000;
+    background-color: #1ca381;
     color: #fff; }
     .Button--red:hover {
       color: #fff;
-      background-color: #e93d34;
+      background-color: #1ca381;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
       transform: translateY(-0.1rem); }
     .Button--red:active {
@@ -411,10 +411,10 @@ body {
       transform: translateY(0); }
   .Button--white {
     background-color: #fff;
-    color: #CE0000; }
+    color: #1ca381; }
     .Button--white:hover {
       background-color: #fdfdfd;
-      color: #e93d34;
+      color: #1ca381;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
       transform: translateY(-0.1rem); }
     .Button--white:active {
@@ -441,15 +441,15 @@ body {
   .Button--redOutline {
     background-color: #fff;
     box-sizing: border-box;
-    border: 1px solid #D98880;;
+    border: 1px solid #40B583;
     border-radius: 0.3rem;
     text-decoration: none;
-    color: #CE0000;
+    color: #40B583;
     padding: .6rem 2.5rem;
     transition: all .3s ease-in-out; }
     .Button--redOutline:hover {
       color: rgb(3, 3, 3);
-      background-color: rgba(253, 139, 131, 0.952) }
+      background-color: rgb(133, 231, 188) }
     .Button--redOutlinea {
       color: #080808; }
   .Button--noShadow {
@@ -481,7 +481,7 @@ body {
   font-family: 'SofiaProMedium';
   font-weight: normal;
   font-size: 1.4rem;
-  color: #f57575;
+  color: rgba(41, 109, 79, 0.699);
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -550,7 +550,7 @@ body {
   .Page--minusTopMargin {
     margin-top: -16rem; }
   .Page--pinkGradient {
-    background-image: linear-gradient(128deg, rgb(255, 255, 255), rgb(255, 255, 255) 64%, rgba(255, 255, 255, 0.856)); }
+    background-image: linear-gradient(128deg, rgb(192, 252, 226), rgb(255, 255, 255) 64%, rgb(192, 252, 226)); }
   .Page--pink-1 {
     background-color: #fff0f0; }
   .Page--pink-2 {
@@ -623,13 +623,13 @@ body {
   font-size: 3.2rem;
   font-family: 'SofiaProMedium';
   font-weight: 300;
-  color: #CE0000; }
+  color: #008d6a; }
   @media only screen and (max-width: 37.5em) {
     .Header {
       font-size: 2.5rem; } }
   .HeaderDescription {
     font-size: 1.7rem;
-    color: #CE0000;
+    color: #000000;
     margin-top: 0.2rem; }
     @media only screen and (max-width: 37.5em) {
       .HeaderDescription {
@@ -657,14 +657,14 @@ body {
         font-size: 2.7rem; } }
   .Header--sub {
     font-size: 2rem;
-    color: rgb(248, 78, 78); }
+    color: #1ca381 }
   .Header--handwritten {
     font-family: 'Courgette', cursive;
     font-size: 2.8rem; }
   .Header--white {
     color: #fff; }
   .Header--light {
-    color: #CE0000; }
+    color: #1ca381; }
   .Header--purple {
     color: #5e00ff; }
   .Header--violet {
@@ -735,7 +735,7 @@ body {
   .Text--noDecoration {
     text-decoration: none; }
   .Text--red {
-    color: #CE0001; }
+    color: #1ca381; }
   .Text--black {
     color: #000; }
   .Text--brown {
@@ -1774,7 +1774,7 @@ body {
       .Navigation__menu {
         width: 100%; } }
     .Navigation__menu:hover {
-      color: #CE0000; }
+      color: #1ca381; }
     .Navigation__menu p {
       cursor: pointer; }
     .Navigation__menu__wrap {
@@ -2136,7 +2136,7 @@ body {
 
 .Cover__circle {
   position: absolute;
-  background: #CE0000;
+  background: #1ca381;
   width: 190rem;
   height: 190rem;
   top: -170rem;
