@@ -448,8 +448,8 @@ body {
     padding: .6rem 2.5rem;
     transition: all .3s ease-in-out; }
     .Button--redOutline:hover {
-      color: rgb(3, 3, 3);
-      background-color: rgb(133, 231, 188) }
+      color: rgb(255, 255, 255);
+      background-color: #40B583 }
     .Button--redOutlinea {
       color: #080808; }
   .Button--noShadow {
