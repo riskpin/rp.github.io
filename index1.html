@@ -11,7 +11,6 @@
     <meta property="og:description"
         content="AI-Powered Training Data
     Superb AI uses AI to customize your training data, all the way from raw data collection to labeling up to 10x faster than manual labor. Stop wasting your time. Save weeks of your work.">
-    <meta property="og:image" content="assets/asset.superb-ai.com/assets/img/logo/og-image.jpg">
     
     <link rel="manifest" href="https://asset.superb-ai.com/assets/img/favicon/site.webmanifest">
     <link rel="mask-icon" href="https://asset.superb-ai.com/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
@@ -31,18 +30,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css1/font-awesome.min.css">
     <title>Risk-Pin Index</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
 </head>
     <script src="http://instant.page/1.1.0" type="module"
     integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
     <script>
         window.setInterval(function(){
+            
             if(screen.width < 800){
                 $(".Cover__circle").css("background", "white");
             }
             else if(screen.width > 799){
                 $(".Cover__circle").css("background", "#1ca381");
             }
-        }, 500);
+
+            if(screen.width < 500){
+                $('.Cover__image').hide(); 
+            }
+            else if(screen.width > 499 && screen.width < 800){
+                $('.Cover__image').show();
+            }
+            else if(screen.width > 799 && screen.width < 1200){
+                $('.Cover__image').hide();
+            }
+            else if(screen.width > 1199){
+                $('.Cover__image').show();
+            }
+        }, 200);
     </script>
 <body>
     <!--Navigation bar-->
@@ -99,29 +113,41 @@
             <div class="Cover__circle"></div>
             <div class="Container">
                 <div class="Cover__text">
-                    <h1 class="Header Header--cover" data-aos="reveal-up" data-aos-duration="700" style="font-size: 25px;">GDPR Compliance for Start-Ups
-                    </h1>
-                    <p class="Header--cover__description" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="100">
-                        Self assess, Identify and mitigate GDPR risks
-                        <br />Super fast and easy, end to end regulation coverage.
-                        <br />Self Service GDPR Tools & Templates.
-                    </p>
-                    <div class="u-m-t-medium">
-                        <a class="Button Button--white Cover__button u-button-m-r" href="#" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="300">REQUEST QUOTE</a>
-                        <a class="Button Button--red Cover__button" href="#" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="400">CONTACT SALES</a>
-                    </div>
-                    <!--
-                    <div class="Cover__emailBoxWrap" data-aos="reveal-left" data-aos-duration="700" data-aos-delay="600">
-                        <h2 class="Cover__emailBoxText">Get early access to our upcoming training dataset! 🎉</h2><br>
-                        <div class="Cover__emailBox" data-aos="reveal-left" data-aos-duration="700" data-aos-delay="800">
-                            <i class="fas fa-arrow-right"></i>
-                            <input class="FormField--underline" id="email_field" type="text" placeholder="Enter your e-mail" required>
-                            <button class="RequestAccessButton" id="submit_button" type="submit" onclick="signup_form()">Request Access</button>
+                    <h1 class="Header Header--cover" data-aos="reveal-up" data-aos-duration="700" style="font-size: 35px;">GDPR Compliance Management for Start-Ups</h1>
+                    
+                    <div class="row">
+                        <div style="width:50%; float:left;">
+                            <p class="Header--cover__description" >
+                                &#128455; Do you want to demonstrate sound GDPR compliance
+                            </p>
+                              
+                            <p class="Header--cover__description">
+                                &#128455;  Do you want to be seen as professional, safe and rubust
+                            </p>  
+                            
+                            <p class="Header--cover__description">
+                                &#128455;  Are you looking for a easy to use cloud based application to help manage GDPR end to end
+                            </p>  
+                        </div>
+                        <div style="width:50%; float:right;">
+                            <p class="Header--cover__description" >
+                                &#128455; Do you want to identify and resolve GDPR exposures centrally
+                            </p>
+                              
+                            <p class="Header--cover__description">
+                                &#128455;  Do you want an application that is simple to use, affordable and is focussed on helping you achieve compliance with minimal effort or specialist expertise
+                            </p> 
                         </div>
                     </div>
--->
+
+                    <div class="u-m-t-medium">
+                        <a class="Button Button--white Cover__button u-button-m-r" href="#" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="300">REQUEST QUOTE</a>
+                        <a class="Button Button--red Cover__button" href="#" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="400">EXPLORE</a>
+                    </div>
                 </div>
-                <img class="Cover__image" src="assets/img/home/homepage_main_image_backgroundNew.png" alt="cover image" height="800px;" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="600">
+                <div class="image_cover">
+                    <img class="Cover__image" src="assets/img/home/homepage_main_image_backgroundNew.png" alt="cover image"  height="700px;" data-aos="reveal-up" data-aos-duration="700" data-aos-delay="600">
+                </div>
             </div>
         </div>
     </section>
